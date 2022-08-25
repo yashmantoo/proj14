@@ -1,0 +1,171 @@
+*{
+    font-family: poppins;
+    background-color: #F5F2F0;
+    color: #8C8C8C;
+}
+body{
+    display: flex;
+    justify-content:space-around;
+}
+
+/* ---------------left---------- */
+.logo{
+    z-index: 2;
+    position: absolute;
+    left: 100px;
+    top: 70px;
+    background-color: transparent;
+}
+.logo:hover{
+    filter: invert(1);
+}
+
+.dancer1{
+    z-index: 1;
+    width: 550px;
+    position: relative;
+    right:120px;
+    bottom: 10px;
+}
+
+/* ------------right---------------- */
+
+.list1{
+    display: flex;
+    list-style-type: none;
+}
+.list-item{
+    padding-right: 50px;
+}
+.list-item:hover,.package:hover{
+    color: black;
+}
+
+.icon{
+    width: 50px;
+    border-radius: 50px;
+}
+.icon:hover{
+    border-radius: 10px;
+}
+.one{
+
+    font-size: 100px;
+    font-weight: 800;
+}
+.crea{
+    color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  position: relative;
+  right: 250px;
+}
+.tivity{
+    position: relative;
+    right: 150px;
+}
+.ingredient{
+    font-size: 40px;
+    position: relative;
+    left: 200px;
+    bottom: 130px;
+    width:250px;
+}
+.socials{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 400px;
+    right: 0px;
+}
+.package{   
+color: white;
+background-color: #333333;
+padding: 15px 45px 15px 45px;
+font-size: 20px;
+}
+.check{
+    position: absolute;
+    top: 350px;
+    right: 50px;
+}
+.list2{
+    position:absolute;
+    left: 580px;
+    bottom: 10px;
+}
+.list2item{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.list2item:hover{
+    color: #000;
+}
+.quote{
+    position: absolute;
+    top: 420px;
+    left: 850px;
+    color: black;
+}
+.grp-dance{
+    width: 400px;
+}
+.arr{
+    width: 100px;
+    position: relative;
+    left: 500px;
+    top: 100px;
+    object-fit: cover;
+}
+.line1{
+    width: 250px;
+    border-top: 2px solid black;
+    position: absolute;
+    left: 540px;
+    top: 35px;
+}
+.line2{
+    height: 280px;
+    border-left:1px solid black ;
+    position: absolute;
+    bottom :15px;
+    right: 765px;
+}
+@media only screen and (max-width:1200px){
+    .right-bottom{
+        display: none;
+    }
+    .line1, .line2{
+        display: none;
+    }
+    .crea, .tivity{
+        font-size: 60px;
+        position: relative;
+        top: 50px;
+        left: 10px;
+    }
+    .package{
+        position: relative;
+        top: 150px;
+    }
+    .ingredient{
+        position: relative;
+        top: -10px;
+    }
+    nav{
+        position: relative;
+        right: 10vw;
+    }
+}
+@media only screen and (max-width:1000px){
+    .dancer1{
+        display:none
+    }
+}
+@media only screen and (max-width:768px){
+    .check{
+        position: relative;
+        top: -30px;
+        left: 180px;
+    }
+}
